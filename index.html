@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send Email | n8n</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background: #fff;
+            width: 420px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #667eea;
+            border: none;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #5a67d8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Send Email using n8n</h2>
+
+    <form method="post" action="" action="https://kylepaez.app.n8n.cloud/webhook-test/f1b05b85-e198-42f2-90a1-253f3e943f32">
+        <div class="form-group">
+            <label>To</label>
+            <input type="email" name="to" placeholder="recipient@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Email subject" required>
+        </div>
+
+        <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit">Send Mail 🚀</button>
+    </form>
+</div>
+
+</body>
+</html>
